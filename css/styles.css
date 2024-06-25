@@ -1,174 +1,168 @@
-/* styles.css */
+        /* Example styles for fixed menu */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-/* Reset and base styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Ensures menu stays above other content */
+        }
 
-/* Header and Navigation */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 60px; /* Adjust top spacing based on header height */
+            z-index: 1000; /* Ensures menu stays above other content */
+        }
 
-nav {
-    background-color: #444;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 60px;
-    z-index: 1000;
-}
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
+        nav a:hover {
+            background-color: #555;
+        }
 
-nav a:hover {
-    background-color: #555;
-}
+        /* Slideshow container styles */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+            margin-top: 120px; /* Adjust based on header and nav height */
+        }
 
-/* Slideshow container */
-.slideshow-container {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    margin-top: 120px;
-}
+        .mySlides {
+            display: none;
+            max-width: 100%;
+        }
 
-.mySlides {
-    display: none;
-}
+        .mySlides img {
+            width: 100%;
+            height: auto;
+        }
 
-.mySlides img {
-    width: 100%;
-    height: auto;
-}
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-}
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
 
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+        /* Dots/bullets for slideshow */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
 
-/* Dots/bullets for slideshow */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
+        .active, .dot:hover {
+            background-color: #717171;
+        }
 
-.active, .dot:hover {
-    background-color: #717171;
-}
+        /* Content sections */
+        .section {
+            padding: 80px 20px;
+            background-color: #f9f9f9;
+        }
 
-/* Sections */
-.section {
-    padding: 80px 20px;
-    background-color: #f1f1f1;
-}
+        .section h2 {
+            text-align: center;
+        }
 
-.section h2 {
-    text-align: center;
-    margin-bottom: 50px;
-}
+        .section p {
+            text-align: justify;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-.section p {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
+        /* Request a Quote form styles */
+        .quote-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-.faq-item {
-    margin-bottom: 20px;
-}
+        .quote-form form {
+            display: grid;
+            gap: 15px;
+        }
 
-.faq-item h3 {
-    margin-top: 0;
-}
+        .quote-form input,
+        .quote-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
 
-/* Quote Form */
-.quote-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+        .quote-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
-.quote-form form {
-    display: grid;
-    grid-gap: 10px;
-}
+        .quote-form button:hover {
+            background-color: #45a049;
+        }
 
-.quote-form input,
-.quote-form textarea,
-.quote-form button {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-.quote-form button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.quote-form button:hover {
-    background-color: #45a049;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
