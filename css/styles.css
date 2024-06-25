@@ -9,11 +9,10 @@
             color: #fff;
             /*padding: 10px 0; */
             text-align: center;
-            position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000; /* Ensures menu stays above other content */
-        }
+        } 
         /* Fixed nav bar */
         .navbar {
                   overflow: hidden;
