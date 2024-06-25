@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookima - The Alchemy of Taste</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Cookima - The Alchemy of Taste</h1>
+</header>
+
+<nav>
+    <a href="#concept">Concept</a>
+    <a href="#menu">Menu</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faq">FAQ</a>
+    <a href="#quote">Request a Quote</a>
+    <a href="#additional-services">Additional Services</a>
+</nav>
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="images/buffet1.jpg" alt="Buffet Image 1">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/buffet2.jpg" alt="Buffet Image 2">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/buffet3.jpg" alt="Buffet Image 3">
+    </div>
+
+    <!-- Navigation arrows -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- Dots/bullets for slideshow -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div id="concept" class="section">
+    <h2>Our Concept</h2>
+    <p>Welcome to Cookima, where the alchemy of taste meets culinary artistry. Our passion for cooking and dedication to using the finest ingredients ensure that every dish is a masterpiece.</p>
+</div>
+
+<div id="menu" class="section">
+    <h2>Our Menu</h2>
+    <p>Explore our diverse menu featuring seasonal and special offerings. Each dish is crafted with care to bring out the best flavors.</p>
+</div>
+
+<div id="services" class="section">
+    <h2>Our Services</h2>
+    <p>From event catering to cooking classes and private dining experiences, Cookima offers a range of services to suit your needs.</p>
+</div>
+
+<div id="testimonials" class="section">
+    <h2>Testimonials</h2>
+    <p>Read what our satisfied customers have to say about their experience with Cookima.</p>
+</div>
+
+<div id="faq" class="section">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+        <h3>What types of events do you cater?</h3>
+        <p>We cater all types of events, including weddings, corporate events, private parties, and more. Contact us for more details.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Do you offer vegetarian or vegan options?</h3>
+        <p>Yes, we offer a variety of vegetarian and vegan dishes. Please let us know your dietary requirements when booking.</p>
+    </div>
+    <div class="faq-item">
+        <h3>How can I request a quote?</h3>
+        <p>You can request a quote by filling out the form in the Request a Quote section. Provide as much detail as possible about your event.</p>
+    </div>
+</div>
+
+<div id="quote" class="section">
+    <h2>Request a Quote</h2>
+    <div class="quote-form">
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <input type="date" name="date" placeholder="Event Date" required>
+            <input type="number" name="guests" placeholder="Number of Guests" required>
+            <textarea name="details" placeholder="Event Details" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div id="additional-services" class="section">
+    <h2>Additional Services</h2>
+    <p>We offer a range of additional services to complement your event:</p>
+    <ul>
+        <li>Tableware and decoration rental</li>
+        <li>Professional on-site service staff</li>
+        <li>Floral arrangements and decorations</li>
+        <li>Customized menu planning</li>
+    </ul>
+</div>
+
+<footer>
+    <p>&copy; 2024 Cookima. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
