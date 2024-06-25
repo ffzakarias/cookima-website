@@ -14,28 +14,33 @@
             top: 0;
             z-index: 1000; /* Ensures menu stays above other content */
         }
+        /* Fixed nav bar */
+        .navbar {
+                  overflow: hidden;
+                  background-color: #333;
+                  position: fixed;
+                  top: 0;
+                  width: 100%;
+                }
 
-        nav {
-            background-color: #444;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 60px; /* Adjust top spacing based on header height */
-            z-index: 1000; /* Ensures menu stays above other content */
-        }
+        .navbar a {
+                  float: left;
+                  display: block;
+                  color: #f2f2f2;
+                  text-align: center;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                  font-size: 17px;
+                }
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 5px;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #555;
+        .navbar a:hover {
+                          background: #ddd;
+                          color: black;
+                        }
+        .main {
+                  padding: 16px;
+                  margin-top: 30px;
+                  height: 1500px;
         }
 
         /* Slideshow container styles */
