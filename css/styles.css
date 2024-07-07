@@ -1,161 +1,55 @@
-        /* Example styles for fixed menu */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-        /* Fixed nav bar */
-        .navbar {
-                  overflow: hidden;
-                  background-color: #333;
-                  position: fixed;
-                  top: 0;
-                  width: 100%;
-                }
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .navbar a {
-                  float: left;
-                  display: block;
-                  color: #f2f2f2;
-                  text-align: center;
-                  padding: 14px 16px;
-                  text-decoration: none;
-                  font-size: 17px;
-                }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-        .navbar a:hover {
-                          background: #ddd;
-                          color: black;
-                        }
-        .main {
-                  padding: 16px;
-                  margin-top: 30px;
-                  height: 1500px;
-        }
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
 
-        /* Slideshow container styles */
-        .slideshow-container {
-            position: relative;
-            max-width: 100%;
-            overflow: hidden;
-            margin-top: 120px; /* Adjust based on header and nav height */
-        }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
 
-        .mySlides {
-            display: none;
-            max-width: 100%;
-        }
+nav ul li {
+    margin: 0 1rem;
+}
 
-        .mySlides img {
-            width: 100%;
-            height: auto;
-        }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            cursor: pointer;
-            background-color: rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-        }
+#hero {
+    background: #555;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
 
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
+#portfolio {
+    padding: 2rem;
+}
 
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        /* Dots/bullets for slideshow */
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.3s ease;
-        }
-
-        .active, .dot:hover {
-            background-color: #717171;
-        }
-
-        /* Content sections */
-        .section {
-            padding: 80px 20px;
-            background-color: #f9f9f9;
-        }
-
-        .section h2 {
-            text-align: center;
-        }
-
-        .section p {
-            text-align: justify;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Request a Quote form styles */
-        .quote-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #f2f2f2;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .quote-form form {
-            display: grid;
-            gap: 15px;
-        }
-
-        .quote-form input,
-        .quote-form textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
-
-        .quote-form button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .quote-form button:hover {
-            background-color: #45a049;
-        }
-
-        /* Footer styles */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
