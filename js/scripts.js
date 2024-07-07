@@ -3,7 +3,7 @@ const images = [
     { src: 'images/buffet2.jpg', },
     { src: 'images/buffet3.jpg', },
     { src: 'images/buffet4.jpg', },
-    { src: 'images/buffet5.jpg', },
+    { src: 'images/buffet7.jpg', },
     { src: 'images/buffet6.jpg', },
     // Add more image objects as needed
 ];
