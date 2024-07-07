@@ -4,7 +4,7 @@ const images = [
     { src: 'images/buffet3.jpg', },
     { src: 'images/buffet4.jpg', },
     { src: 'images/buffet7.jpg', },
-    { src: 'images/buffet6.jpg', },
+    { src: 'images/buffet10.jpg', },
     // Add more image objects as needed
 ];
 
