@@ -1,6 +1,8 @@
 const images = [
-    { src: 'images/buffet1.jpg', alt: 'Project 1' },
-    { src: 'images/buffet2.jpg', alt: 'Project 2' },
+    { src: 'images/buffet1.jpg' },
+    { src: 'images/buffet2.jpg', },
+    { src: 'images/buffet3.jpg', },
+    { src: 'images/buffet4.jpg', },
     // Add more image objects as needed
 ];
 
