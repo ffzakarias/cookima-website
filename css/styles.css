@@ -177,6 +177,33 @@ main {
     text-align: center;
 }
 
+/* FAQ Section Styles */
+#faq {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#faq h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.faq-item p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
 /* Lightbox Styles */
 .lightbox {
     display: none;
