@@ -10,43 +10,83 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html"><img src="images/logo.png" alt="Cookima Logo" class="logo"></a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#hero"><img src="images/logo.png" alt="Cookima Logo" class="logo"></a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-       
-        <section id="about">
+        <section id="hero">
             <h1>Welcome to Cookima</h1>
+            <p>Finesse & Delicacy Buffet.</p>
+        </section>
+
+        <section id="about">
             <h2>Finesse & Delicacy Buffet</h2>
             <p>Travel through the flavors of a buffet. Invite your guests to a warm and authentic experience around a sunny Mediterranean table. Whether for a professional or personal event, we offer an unforgettable sensory, gustatory, and contemplative journey with our 'Finesse & Delicacy Buffet'.</p>
             <div class="cta-buttons">
                 <a href="https://wa.me/yourwhatsappnumber" target="_blank" class="btn whatsapp-btn">WhatsApp</a>
-                <a href="contact.html" class="btn quotation-btn">Ask for a Quotation</a>
+                <a href="#contact" class="btn quotation-btn">Ask for a Quotation</a>
             </div>
         </section>
 
         <section id="download-menu">
+            <h2>Download the Menu</h2>
             <p>Explore an example of what we can offer in our menu.</p>
-            <a href="path/to/your/menu.pdf" download class="btn download-btn">Download Our Menu</a>
+            <a href="path/to/your/menu.pdf" download class="btn download-btn">Download Menu</a>
         </section>
 
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <!-- Portfolio items go here -->
+            <p class="portfolio-intro">We offer you a catering experience featuring a mixed sweet and savory buffet, remixing a variety of international flavors. We transform your tables into true artistic and colorful creations that will leave a lasting impression on your guests and brighten your venue.</p>
+            <div class="gallery">
+                <!-- Gallery items will be injected here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="https://formspree.io/f/{your_form_id}" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" name="event-date" required>
+                
+                <label for="number-of-persons">Number of Persons</label>
+                <input type="number" id="number-of-persons" name="number-of-persons" min="10" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Cookima. All rights reserved.</p>
     </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close cursor" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <!-- Lightbox slides will be injected here by JavaScript -->
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
 
     <script src="js/scripts.js"></script>
 </body>
