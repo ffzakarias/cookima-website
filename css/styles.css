@@ -397,3 +397,32 @@ header {
 .quotation-btn:hover {
     background-color: #e91e63;
 }
+
+/* Download Menu Section Styles */
+#download-menu {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#download-menu h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#download-menu p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.download-btn {
+    background-color: #007BFF;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
