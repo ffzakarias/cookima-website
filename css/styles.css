@@ -341,4 +341,59 @@ header {
     top: 0;
     z-index: 1000;
 }
+/* About Section Styles */
+#about {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
 
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-buttons {
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff4081;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e91e63;
+}
+
+.whatsapp-btn {
+    background-color: #25D366;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1EBB57;
+}
+
+.quotation-btn {
+    background-color: #ff4081;
+}
+
+.quotation-btn:hover {
+    background-color: #e91e63;
+}
