@@ -23,13 +23,22 @@
     <main>
         <section id="contact">
             <h1>Contact Me</h1>
-            <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <form id="contact-form" action="https://formspree.io/f/{your_form_id}" method="POST">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
+                
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
+                
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" name="event-date" required>
+                
+                <label for="number-of-persons">Number of Persons</label>
+                <input type="number" id="number-of-persons" name="number-of-persons" min="10" required>
+                
                 <label for="message">Message</label>
                 <textarea id="message" name="message" required></textarea>
+                
                 <button type="submit">Send</button>
             </form>
         </section>
