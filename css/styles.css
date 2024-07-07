@@ -53,3 +53,32 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Portfolio Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item h2 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.gallery-item p {
+    margin-top: 0.5rem;
+    color: #666;
+}
