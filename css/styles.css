@@ -421,6 +421,16 @@ header {
     display: block;
 }
 
+/* Portfolio Introduction Styles */
+.portfolio-intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
 /* Lightbox Styles */
 .lightbox {
     display: none;
