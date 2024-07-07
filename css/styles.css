@@ -400,13 +400,14 @@ header {
 }
 /* Portfolio Gallery Styles */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 2rem;
 }
 
 .gallery-item {
+    flex: 1 1 calc(33.333% - 1.5rem);
     background: #fff;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -493,4 +494,5 @@ header {
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
 
