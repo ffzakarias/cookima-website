@@ -309,8 +309,36 @@ footer {
 }
 /* Logo Styling */
 .logo {
-    height: 40px; /* Adjust the height as needed */
+    height: 50px; /* Adjust the height to fit the menu */
     width: auto;
     vertical-align: middle;
-    margin-right: 10px; /* Adjust the margin as needed */
+    margin-right: 15px; /* Adjust the margin as needed */
 }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
